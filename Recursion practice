@@ -1,0 +1,22 @@
+def factorial(n):
+    if n == 0 or n == 1: #if factorial equals 0 or 1, returns as 1
+        return 1
+    else:
+        return n * factorial(n-1) #n is being multiplied by the factorial of n-1
+      
+print(factorial(5))
+
+#def palindrome(c):
+
+
+def print_pattern(n):
+    if n > 0:
+        for i in range(n):
+            print("*", end = "")
+        print()
+        
+        print_pattern(n-1)
+        
+        
+print_pattern(5)
+            
